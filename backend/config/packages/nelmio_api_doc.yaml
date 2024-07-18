@@ -1,0 +1,17 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Restaurant API
+            description: Documentation de l'API Restaurant Studi.
+            version: 1.0.0
+        components:
+            securitySchemes:
+                X-AUTH-TOKEN:
+                    type: apiKey
+                    name: X-AUTH-TOKEN
+                    in: header
+        security:
+            - X-AUTH-TOKEN: 123
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc

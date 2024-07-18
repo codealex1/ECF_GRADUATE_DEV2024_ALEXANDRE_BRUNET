@@ -1,0 +1,62 @@
+<section style="background-color: #292222;">
+    <div class='hero-scene  text-center text-white'>
+        <div class='hero-scene-content'>
+            
+            
+            <h1 style="font-family: Cormorant Upright;">Espace Vétérinaire</h1>
+    
+        </div>
+    </div>
+    <div class="container black">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionHabitatModal" style="margin-top: 10px; /* espace entre les boutons */" >
+            Ajouter un commentaire sur un habitat
+        </button>
+    </div>
+    <div class="contact-form-container">
+        <form class="contact-form" action="#" method="post" id="form-sante">
+            <h2>Rapport</h2>
+            <label for="titre">Id animal</label>
+            <input type="text" id="Id-animal" name="Id" >
+            
+            <label for="message">Détails</label>
+            <textarea id="message" name="Detail" rows="4" required></textarea>
+            <label for="message">Nom</label>
+            <textarea id="message" name="Nom"  ></textarea>
+            
+            <button type="button"  class="btn btn-primary" id="btn-rapport-sante">Envoyer</button>
+        </form>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="EditionHabitatModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Modifier un Habitat </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-habitat-modified">
+                    <div class="mb-3">
+                        <label for="IdInput" class="form-label">Id de l'habitat</label>
+                        <input type="int" class="form-control" id="IdInputHabitat"  name="Id"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Commentaire sur L'habitat</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Comments"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_habitat_modified">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="ali-grid">
+
+
+    </div>
+    <br>
+    <br>
+</section> 
