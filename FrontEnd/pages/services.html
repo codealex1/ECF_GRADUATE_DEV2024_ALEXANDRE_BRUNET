@@ -1,0 +1,159 @@
+<section style="background-color: #292222;">
+    <div class='hero-scene text-center text-white'>
+        <div class='hero-scene-content'>
+            
+            
+            <h1 style="font-family: Cormorant Upright;">Services</h1>
+    
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container black" style="background-color: #292222;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CreationModal" data-show="admin" >
+            Ajouter un service
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionModal" data-show="admin" >
+            Modifier un service
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuppModal" data-show="admin" >
+            Supprimer un service
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CreationModal" data-show="employe" >
+            Ajouter un service
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionModal" data-show="employe" >
+            Modifier un service
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuppModal" data-show="employe" >
+            Supprimer un service
+        </button>
+        
+        <!-- <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Restauration</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/6.png" alt="table" class="img-services">
+                </div>
+                <p class="card-text">
+                    Venez profiter d'une game de repas variées et soutenez ainsi des producteurs locaux soucieux de l'environnemnt
+                </p>
+            </div>
+        </div> -->
+        <!-- <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Venez vivre une expérience unique et conviviale en famille grâce à nos guides :</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/5.png" alt="table" class="img-services">
+                </div>
+            </div>
+        </div>
+        <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Optez pour l’aventure et embarquer à bord du Arcadia Express pour une visite pitoresque</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/7.png" alt="table" class="img-services">
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Modal edition -->
+    <div class="modal fade" id="EditionModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Modifier un service </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-service-modified">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Id du Service</label>
+                        <input type="int" class="form-control" id="IdInput"  name="Id"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Petit Train" name="Titre"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Petit Train" name="description"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="ouvertureInput" class="form-label">Heure d'ouverture</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="ouverture"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="FermetureInput" class="form-label">Heure de fermeture </label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="fermeture"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_service_modified">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="CreationModal" tabindex="-1" aria-labelledby="CreationPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Ajouter un service </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-service">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Petit Train" name="Titre"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Petit Train" name="description"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="ouvertureInput" class="form-label">Heure d'ouverture</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="ouverture"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="FermetureInput" class="form-label">Heure de fermeture </label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="fermeture"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_service">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="SuppModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Supprimer un service </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-service-supp">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Id du Service</label>
+                        <input type="int" class="form-control" id="IdInputSupp"  name="Id"> 
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_service_supp">Supprimer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</section>

@@ -1,0 +1,334 @@
+<section style="background-color: #292222;">
+    <div class='hero-scene text-center text-white'>
+        <div class='hero-scene-content'>
+            
+            
+            <h1 style="font-family: Cormorant Upright;">Espace Administrateur</h1>
+    
+        </div>
+    </div>
+    
+    <div >
+        <h1 style="color: white;">Créer un compte</h1>
+        <div class="container-inscription">
+            <form id="formulaireInscription">
+                <div class="mb-3">
+                    <label for="NomInput" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom"> 
+                    <div class="invalid-feedback">
+                        Le nom est requis
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="PrenomInput" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" name="Prenom"> 
+                    <div class="invalid-feedback">
+                        Le prénom est requis
+                    </div>
+                </div>
+                <div class="mb-3">
+                  <label for="EmailInput" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+                  <div class="invalid-feedback">
+                    Le mail n'est pas au bon format
+                </div>
+                <div class="mb-3">
+                    <label for="RoleInput" class="form-label">Role</label>
+                    <input type="text" class="form-control" id="RoleInput"  name="Role"> 
+                </div>
+                <div class="mb-3">
+                  <label for="PasswordInput" class="form-label">Mot de passe</label>
+                  <input type="password" class="form-control" id="PasswordInput" name="Password">
+                  <div class="invalid-feedback">
+                    Votre mdp est invalide , il doit être composer d'au moins 8 caractères dont 1 majuscule et 1 minuscule , d'un chiffre et d'un caractère spécial
+                  </div>
+                  <div class="valid-feedback">
+                    Votre mot de passe est robuste
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+                    <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+                    <div class="invalid-feedback">
+                        Les mdp saisies ne sont pas identiques
+                      </div>
+                  </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" id="btn-validation-inscription">Créer</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <section style="background-color: #292222;">
+        <div class="container-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CreationModal" data-show="admin" style="margin-bottom: 10px; /* espace entre les boutons */  margin-top: 10px;">
+                Ajouter un animal
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionModal" data-show="admin" style="margin-bottom: 10px; /* espace entre les boutons */" >
+                Modifier un animal
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuppModal" data-show="admin" style="margin-bottom: 10px; /* espace entre les boutons */">
+                Supprimer un animal
+            </button>
+            <br>
+        </div>
+    </section>
+    <br>
+    <!-- Modal edition -->
+    <div class="modal fade" id="EditionModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Modifier un animal </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-animal-modified">
+                    <div class="mb-3">
+                        <label  class="form-label">Id de l'animal</label>
+                        <input type="int" class="form-control" id="IdInputAnimal"  name="Id"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="NameInput" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Simba" name="Nom"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label  class="form-label">Race</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Lion" name="Race"> 
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Etat</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Bon" name="Etat"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_animal_modified">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="CreationModal" tabindex="-1" aria-labelledby="CreationPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Ajouter un animal </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-animal">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Simba" name="Nom"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Race</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Lion" name="Race"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Etat</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Bon" name="Etat"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="IdInput" class="form-label">Habitat_id</label>
+                        <input type="int" class="form-control" id="NamePhotoInput" placeholder="1 : savane , 2 : marais , 3 : jungle " name="Habitat"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_animal">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="SuppModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Supprimer un service </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-animal-supp">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Id de l'animal</label>
+                        <input type="int" class="form-control" id="IdInputSuppAnimal"  name="Id"> 
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_animal_supp">Supprimer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section style="background-color: #292222;">
+        <div class="container-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CreationHabitatModal" data-show="admin" style="margin-bottom: 10px; /* espace entre les boutons */  margin-top: 10px;">
+                Ajouter un Habitat
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionHabitatModal" data-show="admin" style="margin-bottom: 10px; /* espace entre les boutons */" >
+                Modifier un Habitat
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuppHabitatModal" data-show="admin" style="margin-bottom: 10px; /* espace entre les boutons */">
+                Supprimer un Habitat
+            </button>
+            <br>
+        </div>
+    </section>
+    <br>
+    <!-- Modal edition -->
+    <div class="modal fade" id="EditionHabitatModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Modifier un Habitat </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-habitat-modified">
+                    <div class="mb-3">
+                        <label for="IdInput" class="form-label">Id de l'habitat</label>
+                        <input type="int" class="form-control" id="IdInputHabitat"  name="Id"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="NameInput" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Nom"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Description"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Commentaire sur L'habitat</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Comments"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_habitat_modified">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="CreationHabitatModal" tabindex="-1" aria-labelledby="CreationPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Ajouter un Habitat </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-habitat">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Nom"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Description"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Commentaire sur L'habitat</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Comments"> 
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_habitat">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="SuppHabitatModal" tabindex="-1" aria-labelledby="EditionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Supprimer un habitat </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-habitat-supp">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Id de l'habitat</label>
+                        <input type="int" class="form-control" id="IdInputSuppHabitat"  name="Id"> 
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_habitat_supp">Supprimer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div ><h1 style="color: white; ">Consultation des animaux</h1></div>
+    
+    <div class="animal-grid">
+        
+        <!-- <div class="animal-card">
+            <div class="animal-info">
+              <h2>Nom : Animal 2</h2>
+              <p>Nombre de vue : 325</p>
+              <p>Click : 175</p>
+            </div>
+        </div>
+        
+        <div class="animal-card">
+            
+            <div class="animal-info">
+              <h2>Nom : Animal 2</h2>
+              <p>Nombre de vue : 325</p>
+              
+            </div>
+        </div>
+        <div class="animal-card">
+            <div class="animal-info">
+              <h2>Nom : simba</h2>
+              <p>Nombre de vue : 325</p>
+            </div>
+        </div> -->
+        
+          
+        
+        <!-- Add more animal cards here -->
+    </div>
+    <div><h1 style="color: white; ">Rapport Vétérinaire</h1>
+        <form class="filter-form">
+            <label for="date-filter">Filter par date:</label>
+            <input type="date" id="date-filter" />
+            <label for="animal-id-filter">Filtrer par animal ID:</label>
+            <input type="number" id="animal-id-filter" />
+            <button type="submit" id="btn-rapport-filter">Apply filter</button>
+          </form>
+        <div class="container">
+            <!-- <div class="container-rapport black">
+                <div class="container-rapport-card">
+                    <h1 style="color:white; font-family: Cormorant Upright;">Id Animal</h1>
+                    <h2 style="color:white;">Nom</h2>
+                    <p class="card-text">
+                        Venez profiter d'une game de repas variées et soutenez ainsi des producteurs locaux soucieux de l'environnemnt
+                    </p>
+                    <p class="card-text">
+                        date
+                    </p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+

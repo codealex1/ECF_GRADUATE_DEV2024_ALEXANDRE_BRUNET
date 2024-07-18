@@ -1,0 +1,121 @@
+<section style="background-color: #292222;">
+    <div class='hero-scene text-center text-white'>
+        <div class='hero-scene-content'>
+            
+            
+            <h1 style="font-family: Cormorant Upright;">Espace Employé</h1>
+    
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container black" style="background-color: #292222;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CreationModal" data-show="employe" >
+            Ajouter une alimentation
+        </button>
+        
+        
+        <!-- <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Restauration</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/6.png" alt="table" class="img-services">
+                </div>
+                <p class="card-text">
+                    Venez profiter d'une game de repas variées et soutenez ainsi des producteurs locaux soucieux de l'environnemnt
+                </p>
+            </div>
+        </div> -->
+        <!-- <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Venez vivre une expérience unique et conviviale en famille grâce à nos guides :</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/5.png" alt="table" class="img-services">
+                </div>
+            </div>
+        </div>
+        <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Optez pour l’aventure et embarquer à bord du Arcadia Express pour une visite pitoresque</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/7.png" alt="table" class="img-services">
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="avis-container">
+
+    </div>
+    <br>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AvisModal" data-show="employe" >
+        Valider un commentaire
+        </button>
+    </div>
+    
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="CreationModal" tabindex="-1" aria-labelledby="CreationPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Consommation </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-alimentation">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Animal_Id</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="Id"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="nourriture" class="form-label">Nourriture</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="nourriture"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="FermetureInput" class="form-label">Quantité </label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="quantite"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn-alimentation">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal edition -->
+    <div class="modal fade" id="AvisModal" tabindex="-1" aria-labelledby="CreationPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Valider </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-avis-validation">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Avis_Id</label>
+                        <input type="text" class="form-control" id="IdInput"  name="Id"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="nourriture" class="form-label">Visible : true ou false </label>
+                        <input type="text" class="form-control" id="IsVisible"  name="IsVisible" > 
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn-avis-validation">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+</section>
