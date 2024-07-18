@@ -50,7 +50,7 @@ $ git init
 $ git add .
 $ git commit -m "first commit"
 $ git branch -M dev
-$ git remote add origin https://github.com/codealex1/ECF_GRADUATE_DEV2024.git
+$ git remote add origin https://github.com/codealex1/ECF_GRADUATE_DEV2024_ALEXANDRE_BRUNET.git
 $ git push -u origin dev
 ```
 
