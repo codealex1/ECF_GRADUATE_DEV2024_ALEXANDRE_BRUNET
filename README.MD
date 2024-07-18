@@ -29,14 +29,14 @@ Nous vous demandons de vous mettre en situation d’examen. Prenez le temps de l
 
 **Démonstration** : <span style="color:red">**url du site**</span>
 
-    Adresse email admin      : admin@josearcardia.com
-    Mot de passe admin       : admin
+    Adresse email admin      : admin@josearcadia.com
+    Mot de passe admin       : Admin123!
 
-    Adresse email employé      : employe@arcardiaemploye.com
-    Mot de passe employé       : arcadiaemploye
+    Adresse email employé      : employe@arcadiaemploye.com
+    Mot de passe employé       : Employe123!
 
-    Adresse email vétérinaire      : veterinaire@arcardiaveterinaire.com
-    Mot de passe vétérinaire       : veterinairearcadia
+    Adresse email vétérinaire      : veterinaire@arcadiaveterinaire.com
+    Mot de passe vétérinaire       : Veterinaire123!
 
 ## Réflexion et configuration de l'environement de travail 
 
@@ -54,9 +54,20 @@ $ git remote add origin https://github.com/codealex1/ECF_GRADUATE_DEV2024_ALEXAN
 $ git push -u origin dev
 ```
 
-### <span style="text-decoration:underline">Résumé du besoin et choix des technologies</span>
+### <span style="text-decoration:underline">Déploiement local</span>
 
+commencez par cloner le repository à l'aide de la commande git clone https://github.com/codealex1/ECF_GRADUATE_DEV2024_ALEXANDRE_BRUNET.git
 
+Rendez-vous dans le dossier FrontEnd , installer les dépendances avec npm install
+puis direction le index.html  , grace à l'extention php Server de Vs code clic droit , php serve project
+
+Ensuite allez dans le dossier backend , ouvrer le terminal , puis exécuter la commande composer install . 
+
+Créer un fichier .env.local et configurer l'url de votre base de donée et de votre service d'envoie de mail (mailtrap utlisé lors du développement)
+
+Une fois les dépendances installées , exécuter la commande php -S 127.0.0.1:8000 -t public pour lancer l'API en local .
+
+Enfin , rentrez comme url api/doc et le tour sera joué . 
 
 
 **Trello** : <span style="color:red">**url du trello**</span>
