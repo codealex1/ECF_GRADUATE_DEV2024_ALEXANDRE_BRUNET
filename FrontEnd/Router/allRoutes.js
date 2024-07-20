@@ -2,14 +2,14 @@ import Route from "./Route.js";
 
 //Définir ici vos routes
 export const allRoutes = [
-    new Route("/FrontEnd/accueil", "Accueil", "/FrontEnd/pages/pages/home.html",[] , "/FrontEnd/js/home/home.js"),
-    new Route("/FrontEnd/services", "services", "/FrontEnd/pages/pages/services.html", [],"/FrontEnd/js/service/service.js"),
-    new Route("/FrontEnd/sante", "sante", "/FrontEnd/pages/pages/sante.html", ["ROLE_VETERINAIRE"],"/FrontEnd/js/veterinaire/sante.js"),
-    new Route("/FrontEnd/habitats", "habitats", "/FrontEnd/pages/pages/habitats.html", [] ,"/FrontEnd/js/habitat/habitat.js"),
-    new Route("/FrontEnd/contact", "contact", "/FrontEnd/pages/pages/contact.html", [],"/FrontEnd/js/contact/contact.js"),
-    new Route("/FrontEnd/admin", "admin", "/FrontEnd/pages/Admin/admin.html",["ROLE_ADMIN"], "/FrontEnd/js/admin/admin.js"),
-    new Route("/FrontEnd/employe", "employe", "/FrontEnd/pages/pages/employe.html",["ROLE_EMPLOYE"],"/FrontEnd/js/employe/employe.js"),
-    new Route("/FrontEnd/connexion", "connexion", "/FrontEnd/pages/pages/connexion.html" ,[],"/FrontEnd/js/auth/signin.js"),];
+    new Route("/FrontEnd/accueil", "Accueil", "./pages/pages/home.html",[] , "./js/home/home.js"),
+    new Route("/FrontEnd/services", "services", "./pages/pages/services.html", [],"./js/service/service.js"),
+    new Route("/FrontEnd/sante", "sante", "./pages/pages/sante.html", ["ROLE_VETERINAIRE"],"./js/veterinaire/sante.js"),
+    new Route("/FrontEnd/habitats", "habitats", "./pages/pages/habitats.html", [] ,"./js/habitat/habitat.js"),
+    new Route("/FrontEnd/contact", "contact", "./pages/pages/contact.html", [],"./js/contact/contact.js"),
+    new Route("/FrontEnd/admin", "admin", "./pages/Admin/admin.html",["ROLE_ADMIN"], "./js/admin/admin.js"),
+    new Route("/FrontEnd/employe", "employe", "./pages/pages/employe.html",["ROLE_EMPLOYE"],"./js/employe/employe.js"),
+    new Route("/FrontEnd/connexion", "connexion", "./pages/pages/connexion.html" ,[],"./js/auth/signin.js"),];
 
 
 
