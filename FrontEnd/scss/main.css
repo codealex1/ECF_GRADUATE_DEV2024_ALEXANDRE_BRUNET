@@ -12006,7 +12006,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/FrontEnd/images/iamges/1.png);
+  background-image: url(../images/iamges/1.png);
   background-size: cover;
 }
 .hero-scene * {
@@ -12211,15 +12211,15 @@ h1, .h1 {
 }
 
 .image1 {
-  background-image: url("/FrontEnd/images/iamges/8.jpg"); /* Remplacez par le chemin de votre image */
+  background-image: url("../images/iamges/8.jpg"); /* Remplacez par le chemin de votre image */
 }
 
 .image2 {
-  background-image: url("/FrontEnd/images/iamges/9.jpg"); /* Remplacez par le chemin de votre image */
+  background-image: url("../images/iamges/9.jpg"); /* Remplacez par le chemin de votre image */
 }
 
 .image3 {
-  background-image: url("/FrontEnd/images/iamges/10.png"); /* Remplacez par le chemin de votre image */
+  background-image: url("../images/iamges/10.png"); /* Remplacez par le chemin de votre image */
 }
 
 .button-container-animal {
