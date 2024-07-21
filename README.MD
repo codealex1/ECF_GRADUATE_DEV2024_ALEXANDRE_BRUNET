@@ -93,7 +93,8 @@ Enfin , rentrez comme url api/doc et le tour sera joué .
     + HTML 5
     + CSS 3
     + Javascript
-    + ReactJs
+    + NodeJs
+    + Bootstrap
 
 
 
