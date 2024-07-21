@@ -70,7 +70,7 @@ Une fois les dépendances installées , exécuter la commande php -S 127.0.0.1:8
 Enfin , rentrez comme url api/doc et le tour sera joué . 
 
 
-**Trello** : <span style="color:red">**url du trello**</span>
+**Trello** : <span style="color:red">: https://trello.com/b/Gj4oYQbu/ecf</span>
 
 
 
