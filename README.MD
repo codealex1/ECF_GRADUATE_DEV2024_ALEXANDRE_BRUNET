@@ -25,7 +25,7 @@ Nous vous demandons de vous mettre en situation d’examen. Prenez le temps de l
 
 ## Informations
 
-**Github** : https://github.com/codealex1/ECF_GRADUATE_DEV2024.git
+**Github** :https://github.com/codealex1/ECF_GRADUATE_DEV2024_ALEXANDRE_BRUNET.git
 
 **Démonstration** : <span style="color:red">**url du site**</span>
 
