@@ -110,7 +110,7 @@ const containerServices = document.querySelector(".container-services");
 const container = document.querySelector(".container");
 
 const IdServcice = [1 ,2 ,3 ]//ajouter dans le tableau les id des futurs services 
-const images = ['/images/iamges/6.png', '/images/iamges/7.png', '/images/iamges/5.png']; // tableau d'images correspondant aux ID des services
+const images = ['./images/iamges/6.png', './images/iamges/7.png', './images/iamges/5.png']; // tableau d'images correspondant aux ID des services
 
 IdServcice.forEach((id, index) => {
     const url = `http://127.0.0.1:8000/api/service/${id}`;
